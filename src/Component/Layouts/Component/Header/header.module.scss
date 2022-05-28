@@ -1,0 +1,13 @@
+.wrapeer {
+  height: 60px;
+  width: 100%;
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
+  height: var(--default-layout-header-height);
+  display: flex;
+  justify-content: center;
+}
+
+.inner {
+  height: var(--default-layout-header-height);
+  width: var(--default-layout-width);
+}
