@@ -115,7 +115,21 @@
     display: flex;
 }
 
-.icon-upload {
+.icon-message {
+    position: relative;
+}
+
+.number-message {
+    position: absolute;
+    font-size: 1.2rem;
+    color: var(--while);
+    background-color: #fd3b3b;
+    width: 21px;
+    height: 16px;
+    line-height: 16px;
+    border-radius: 16px;
+    right: 5px;
+    top: 1px;
 }
 
 .icon-upload,
@@ -124,6 +138,7 @@
     font-size: 2.2rem;
     color: #161823;
     padding: 4px 12px;
+    display: flex;
 }
 
 .user-avatar {
