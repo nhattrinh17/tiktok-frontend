@@ -3,11 +3,17 @@
     --search-height: 46px;
     --search-top-speacer: 9px;
 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
     height: 60px;
     width: 100%;
-    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
     height: var(--default-layout-header-height);
     display: flex;
+    background-color: #fff;
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 12%);
     justify-content: center;
 }
 
@@ -20,82 +26,8 @@
     padding: 0 var(--default-layout-horizontal-spacer);
 }
 
-.search {
-    width: 361px;
-    background-color: #f1f1f2;
-    padding-left: 16px;
-    border-radius: var(--search-border-radius);
-    height: var(--search-height);
+.logo-link {
     display: flex;
-    border: 1.5px solid transparent;
-    &:focus-within {
-        border-color: rgba(22, 24, 35, 0.2);
-    }
-}
-
-.search-input {
-    flex: 1;
-    height: 100%;
-    background-color: #f1f1f2;
-    caret-color: var(--primary);
-    color: var(--black);
-
-    &:not(:placeholder-shown) ~ .search-btn {
-        color: rgba(22, 24, 35, 0.7);
-    }
-}
-
-.clear,
-.loading {
-    border: none;
-    background-color: #f1f1f2;
-    color: rgba(22, 24, 35, 0.34);
-    font-size: 1.4rem;
-    margin-right: 10px;
-}
-
-.search-btn {
-    border: none;
-    color: rgba(22, 24, 35, 0.34);
-    width: 52px;
-    height: 100%;
-    border-top-right-radius: var(--search-border-radius);
-    border-bottom-right-radius: var(--search-border-radius);
-    font-size: 1.6rem;
-    font-weight: 800;
-    position: relative;
-
-    &:hover {
-        background-color: rgba(22, 24, 35, 0.03);
-        cursor: pointer;
-    }
-
-    &::before {
-        content: '';
-        position: absolute;
-        width: 1px;
-        background-color: rgba(22, 24, 35, 0.12);
-        top: var(--search-top-speacer);
-        bottom: var(--search-top-speacer);
-        left: 0px;
-    }
-
-    &:active {
-        background-color: rgba(22, 24, 35, 0.06);
-    }
-}
-
-.search-result {
-    width: 361px;
-}
-
-.search-title {
-    height: 30px;
-    padding: 5px 12px;
-    font-size: 1.4rem;
-    line-height: 20px;
-    font-weight: 600;
-    color: rgba(22, 24, 35, 0.5);
 }
 
 .action {
@@ -115,7 +47,7 @@
     display: flex;
 }
 
-.icon-message {
+.icon-inbox {
     position: relative;
 }
 
@@ -123,7 +55,7 @@
     position: absolute;
     font-size: 1.2rem;
     color: var(--while);
-    background-color: #fd3b3b;
+    background-color: #e50a0a;
     width: 21px;
     height: 16px;
     line-height: 16px;
@@ -133,6 +65,7 @@
 }
 
 .icon-upload,
+.icon-inbox,
 .icon-message {
     background-color: transparent;
     font-size: 2.2rem;

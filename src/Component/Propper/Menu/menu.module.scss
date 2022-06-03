@@ -10,6 +10,10 @@
     padding-bottom: 8px;
 }
 
+.menu-body {
+    overflow-y: auto;
+}
+
 .menu_item {
     width: 100%;
     justify-content: flex-start;
@@ -36,6 +40,7 @@
     display: flex;
     align-items: center;
     margin-top: -8px;
+    flex-shrink: 0;
 }
 
 .back-btn {
